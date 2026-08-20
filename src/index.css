@@ -1,0 +1,126 @@
+@import "tailwindcss";
+
+@theme {
+  --color-raj-pink: #C96F7B;
+  --color-maroon: #5A1726;
+  --color-deep-maroon: #3A0F19;
+  --color-royal: #1A237E;
+  --color-gold: #C89A4B;
+  --color-terra: #B85C38;
+  --color-sand: #E8D5B5;
+  --color-ivory: #F7EFE2;
+  --color-charcoal: #1B1714;
+  --color-stage-dark: #2D1B10;
+  
+  --font-serif: "Playfair Display", "Cormorant Garamond", serif;
+  --font-sans: "Montserrat", "Jost", sans-serif;
+  --font-display: "Playfair Display", serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-charcoal text-ivory font-sans;
+    overflow-x: hidden;
+    width: 100%;
+    min-height: 100vh;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  section {
+    scroll-margin-top: 5.5rem;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+
+  button, a, [role="button"], input, select, textarea {
+    touch-action: manipulation;
+  }
+}
+
+.theatre-font {
+  font-family: 'Playfair Display', "Cormorant Garamond", serif;
+}
+
+.ui-font {
+  font-family: 'Montserrat', "Jost", sans-serif;
+}
+
+.curtain-left {
+  background: linear-gradient(90deg, #3A0F19 0%, #5A1726 50%, #3A0F19 100%);
+  box-shadow: 10px 0 30px rgba(0,0,0,0.5);
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+.curtain-right {
+  background: linear-gradient(-90deg, #3A0F19 0%, #5A1726 50%, #3A0F19 100%);
+  box-shadow: -10px 0 30px rgba(0,0,0,0.5);
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+.puppet-string {
+  width: 1px;
+  background: rgba(200, 154, 75, 0.4);
+  height: 200px;
+  position: absolute;
+}
+
+.ticket-shape {
+  background: #E8D5B5;
+  color: #5A1726;
+  clip-path: polygon(0% 15%, 5% 15%, 5% 0%, 95% 0%, 95% 15%, 100% 15%, 100% 85%, 95% 85%, 95% 100%, 5% 100%, 5% 85%, 0% 85%);
+  transform: translateZ(0);
+}
+
+.gold-glow {
+  text-shadow: 0 0 15px rgba(200, 154, 75, 0.6);
+}
+
+.stage-floor {
+  background: linear-gradient(180deg, #2D1B10 0%, #1B1714 100%);
+}
+
+.hawa-mahal-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  opacity: 0.25;
+}
+
+.jharokha {
+  height: 100px;
+  background: #C96F7B;
+  border-radius: 50% 50% 10% 10%;
+  border: 2px solid #C89A4B;
+  position: relative;
+}
+
+/* GPU hardware acceleration helper */
+.gpu-layer {
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* Hide scrollbar for seamless theatre aesthetic */
+::-webkit-scrollbar {
+  display: none;
+  width: 0px;
+  height: 0px;
+}
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

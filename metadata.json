@@ -1,0 +1,6 @@
+{
+  "name": "Kahaanii Ghar Tak",
+  "description": "An immersive Rajasthani theatre-themed web platform for learning Hindi, Indian culture, and history through stories.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
