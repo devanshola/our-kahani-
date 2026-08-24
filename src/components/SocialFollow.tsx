@@ -12,7 +12,7 @@ export default function SocialFollow() {
   const socialLinks: SocialLink[] = [
     {
       name: 'Instagram',
-      url: 'https://www.instagram.com/thekahaanii',
+      url: 'https://www.instagram.com/thekaahani',
       ariaLabel: 'Follow Kahaanii on Instagram',
       gradientHover: 'hover:shadow-[0_0_20px_rgba(225,48,108,0.4)] hover:border-pink-500/60',
       icon: (
