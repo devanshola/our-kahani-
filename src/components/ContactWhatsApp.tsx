@@ -20,8 +20,8 @@ export default function ContactWhatsApp() {
 
   const rawPhone = '918840725262';
   const displayPhone = '+91 88407 25262';
-  const primaryEmail = 'thekahaaniii@gmail.com';
-  const ccEmail = 'devanshhola@gmail.com';
+  const primaryEmail = 'anvesha@kaahani.com';
+  const ccEmail = 'thekahaaniii@gmail.com';
 
   const topics = [
     {

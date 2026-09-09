@@ -26,7 +26,7 @@ async function startServer() {
   app.post('/api/enquiry', (req, res) => {
     try {
       const { name, email, phone, topic, message } = req.body;
-      const targetEmail = process.env.NOTIFICATION_EMAIL || 'thekahaaniii@gmail.com, devanshhola@gmail.com';
+      const targetEmail = process.env.NOTIFICATION_EMAIL || 'anvesha@kaahani.com, thekahaaniii@gmail.com';
       
       console.log('====================================');
       console.log('📩 NEW CUSTOMER QUERY RECEIVED:');
